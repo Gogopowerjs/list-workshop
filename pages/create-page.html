@@ -4,21 +4,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Create page</title>
     <script type="text/javascript">
       pageName="create";
     </script>
-
     <meta name="mobile-web-app-capable" content="yes">
   </head>
   <body>
-
     <main>
-      
+       <form class="form" id="subscribe-form" name="subscribe" method="post">
+                   
+                        <input type="text"  name="name" class="name" placeholder="Ваше имя" title="Формат ввода Иван Иванов" required>
+                        <input type="text"  name="comment" class="comment" placeholder="Коментарий" title="" required>
+                              
+                        <input type="email" class="email" title="Формат ввода alla@fabrika.com" placeholder="E-mail" required>
+                                
+                        <input class="password" type="text" title="Ваш пароль" name="subject" id="subject"  placeholder="Ваш пароль">
+                                  
+                     	<input type="submit" id="sand_question" value="Отправить Заявку"/>
+                                    
+                </form>
     </main>
-
-
     <script src="../dist/app.js"> </script>
   </body>
 </html>
+
